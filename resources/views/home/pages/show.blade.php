@@ -82,7 +82,7 @@
             <div class="col-md-5">
 
              <?php   $de = json_decode($product['product_image']);  ?>
-            <img class="card-img" src="{{asset('/images/'. $de)}}" alt=""/>
+            <img class="card-img" src="{{asset('/images/'. $de[1])}}" alt=""/>
 
             </div>
             <div class="col-md-7">
