@@ -81,14 +81,13 @@
           
             <div class="col-md-5">
 
-             <?php   $de = json_decode($product['product_image']);  ?>
-            <img class="card-img" src="{{asset('/images/'. $de)}}" alt="asdfafasdf"/>
+             
 
             </div>
             <div class="col-md-7">
               <div class="">
-              <h3>{{$product['product_name']}}</h3>
-              <h3>{{$product['id']}}</h3>
+              <h3>product name</h3>
+              
               <h2>$149.99</h2>
               <ul class="list">
                 <li>
