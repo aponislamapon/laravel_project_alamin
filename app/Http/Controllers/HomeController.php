@@ -109,10 +109,10 @@ class HomeController extends Controller
  
             $cart = [
                     $id => [
-                        "name" => $product->name,
+                        "name" => $product->product_name,
                         "quantity" => 1,
-                        "price" => $product->price,
-                        "photo" => $product->photo
+                        "price" => $product->product_price,
+                        "photo" => $product->product_image
                     ]
             ];
  
@@ -134,10 +134,10 @@ class HomeController extends Controller
  
         // if item not exist in cart then add to cart with quantity = 1
         $cart[$id] = [
-            "name" => $product->name,
+            "name" => $product->product_name,
             "quantity" => 1,
-            "price" => $product->price,
-            "photo" => $product->photo
+            "price" => $product->product_price,
+            "photo" => $product->product_image
         ];
  
         session()->put('cart', $cart);
