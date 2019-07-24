@@ -29,7 +29,7 @@
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="{{asset($product['id'])}}" data-toggle="modal" data-target="#detailsproduct">
+                        <a href="#" data-toggle="modal" data-target="#product" data-id="{{$product['id']}}" data-image="{{asset('/images/'. $de)}}">
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
@@ -64,7 +64,7 @@
 
 
                         <!-- modal -->
-    <div class="modal fade" id="detailsproduct" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -75,19 +75,20 @@
           </div>
           <div class="modal-body">
         
-          <div class="row">
+                  <div class="row">
 
             
           
             <div class="col-md-5">
 
              <?php   $de = json_decode($product['product_image']);  ?>
-            <img class="card-img" src="{{asset('/images/'. $de)}}" alt=""/>
+            <img class="card-img" src="{{asset('/images/'. $de)}}" alt="asdfafasdf"/>
 
             </div>
             <div class="col-md-7">
               <div class="">
-              <h3>Faded SkyBlu Denim Jeans</h3>
+              <h3>{{$product['product_name']}}</h3>
+              <h3>{{$product['id']}}</h3>
               <h2>$149.99</h2>
               <ul class="list">
                 <li>
@@ -138,7 +139,6 @@
             </div>
             </div>
           </div>
-         
         
           </div>
           <div class="modal-footer">
