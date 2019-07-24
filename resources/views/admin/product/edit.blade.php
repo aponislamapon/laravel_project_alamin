@@ -47,8 +47,8 @@
 							   <div class="form-group">
 							   
 							    <label style="color: black;">Product Image:</label>
-			 <?php   $de = json_decode($product['product_image']);  ?>
-			 <img style="height: 100px; width: 50px;" src="{{asset('/images/'. $de),$product['product_name']}}" alt="abc">
+			
+			 <img style="height: 100px; width: 50px;" src="{{asset('/images/'. $product['product_image']),$product['product_name']}}" alt="abc">
 
 							    <input type="file" name="product_image[]" class="form-control">
 							  </div>

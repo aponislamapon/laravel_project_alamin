@@ -67,7 +67,7 @@ class ProductController extends Controller
         $products->product_qty=$request->get('product_qty');
 
          $products->product_name= $request->product_name;
-        $products->product_image=json_encode($data);  
+        $products->product_image=$data;  
 
 
       
@@ -134,7 +134,7 @@ class ProductController extends Controller
         $products->product_qty=$request->get('product_qty');
 
          $products->product_name= $request->product_name;
-        $products->product_image=json_encode($data);   
+        $products->product_image=$data;   
 
         $products->save();
         return redirect('admin/product');

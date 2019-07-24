@@ -126,9 +126,9 @@
 								<td>{{$product['id']}}</td>
 								<td>{{$product['product_name']}}</td>
 
-		<?php   $de = json_decode($product['product_image']);  ?>
+		
 
-       							 <td style="text-align: center;"><img style="height: 100px; width: 50px;" src="{{asset('/images/'.$de)}}" alt=""></td>
+       							 <td style="text-align: center;"><img style="height: 100px; width: 50px;" src="{{asset('/images/'.$product['product_image'])}}" alt=""></td>
 								
 								<td class="center">{{$product['product_price']}}</td>
 								<td class="center">{{$product['product_qty']}}</td>

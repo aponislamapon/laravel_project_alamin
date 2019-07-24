@@ -22,14 +22,14 @@
                   <div class="single-product">
                     <div class="product-img">
 
-                      <?php   $de = json_decode($product['product_image']);  ?>
+                     
                       <img
                         class="card-img"
-                        src="{{asset('/images/'. $de)}}"
+                        src="{{asset('/images/'. $product['product_image'])}}"
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="#" data-toggle="modal" data-target="#product" data-id="{{$product['id']}}" data-image="{{asset('/images/'. $de)}}">
+                        <a href="#" data-toggle="modal" data-target="#product" data-id="{{$product['id']}}" data-image="{{asset('/images/'. $product['product_name'])}}">
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
