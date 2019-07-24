@@ -14,6 +14,32 @@
 Route::resource('/', 'HomeController');
 
 
+
+
+
+
+
+Route::get('cart', 'HomeController@cart');
+
+Route::get('add-to-cart/{id}', 'HomeController@addToCart');
+
+Route::patch('update-cart', 'HomeController@update');
+ 
+Route::delete('remove-from-cart', 'HomeController@remove');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/details', 'ProductdetailsController@index');
 
 //backend route
