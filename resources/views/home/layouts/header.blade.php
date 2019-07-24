@@ -115,7 +115,10 @@
                       </a>
                                         <!--  -->
 
-<div class="dropdown-menu" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<div class="dropdown-menu" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 15.19);min-width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;  top: 100%;
+    left: -100px;">
                     <div class="row total-header-section">
                         <div class="col-lg-6 col-sm-6 col-6">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="badge badge-pill badge-danger">{{ count(session('cart')) }}</span>
@@ -132,6 +135,7 @@
                             <p>Total: <span class="text-info">$ {{ $total }}</span></p>
                         </div>
                     </div>
+                    <hr>
  
                     @if(session('cart'))
                         @foreach(session('cart') as $id => $details)
