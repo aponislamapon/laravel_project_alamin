@@ -29,7 +29,7 @@
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="#" data-toggle="modal" data-target="#product" data-id="{{$product['id']}}" data-image="{{asset('/images/'. $product['product_name'])}}">
+                        <a href="#" data-toggle="modal" data-target="#pro"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image']}}" >
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
@@ -64,11 +64,11 @@
 
 
                         <!-- modal -->
-    <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pro" tabindex="-1" role="dialog" aria-labelledby="abcdef" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title" id="exampleModalLabel">Product details</h2>
+            <h2 class="modal-title" id="abcdef">Product details</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -80,13 +80,15 @@
             
           
             <div class="col-md-5">
+              <img src="{{asset('/images/'.$product['product_image'])}}" alt="dsfads">
 
              
 
             </div>
             <div class="col-md-7">
               <div class="">
-              <h3>product name</h3>
+              <h3>Product Name</h3>
+              <h3><span id="fav-id"></span></h3>
               
               <h2>$149.99</h2>
               <ul class="list">
@@ -146,5 +148,19 @@
         </div>
       </div>
     </div><!-- Modal -->
+
+
+     <script>
+  $(function() {
+    $('#pro').on("show.bs.modal", function (e) {
+         
+         $("#pro").html($(e.relatedTarget).data('id'));
+         $("#pro").html($(e.relatedTarget).data('photo'));
+         
+         $("#fav-id").html($(e.relatedTarget).data('id'));
+         $("#fav-photo").html($(e.relatedTarget).data('photo'));
+    });
+});
+  </script> 
 
 @endsection
