@@ -78,7 +78,7 @@
             
           
             <div class="col-md-5">
-              <img src="{{asset('/images/'.$product['product_image'])}}" alt="dsfads">
+              <img style="width: 100%;" src="{{asset('/images/'.$product['product_image'])}}" alt="dsfads">
 
              
 

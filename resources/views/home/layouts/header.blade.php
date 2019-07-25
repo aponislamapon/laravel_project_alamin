@@ -142,7 +142,7 @@
                             <div class="row cart-detail">
                                 <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
 
-                                    <img style="height: 100px; width: 60px;" src="{{asset('images/'. $details['photo'] )}}" />
+                                    <img style="height: 100px; width: 60px; padding: 10px;" src="{{asset('images/'. $details['photo'] )}}" />
                                 </div>
                                 <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
                                     <p style="font-weight: bold; font-size: 16px;">{{ $details['name'] }}</p>
