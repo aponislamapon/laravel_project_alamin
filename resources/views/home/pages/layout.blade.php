@@ -5,14 +5,34 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  
     <title>@yield('title')</title>
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/linericon/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/themify-icons.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/owl-carousel/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/lightbox/simpleLightbox.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/nice-select/css/nice-select.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/animate-css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/vendors/jquery-ui/jquery-ui.css')}}" />
+    <!-- main css -->
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('frontend/css/responsive.css')}}" />
+
+
+
+
+
+
+
+
+
  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{asset('asset_cart/bootstrap.min.css')}}">
+    
+  
  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="{{asset('asset_cart/jquery.min.js')}}"></script>
+   
  
 </head>
 <body>
@@ -72,6 +92,21 @@
 </div>
  
 @yield('scripts')
+<script src="{{asset('frontend/js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{asset('frontend/js/popper.js')}}"></script>
+    <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend/js/stellar.js')}}"></script>
+    <script src="{{asset('frontend/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+    <script src="{{asset('frontend/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+    <script src="{{asset('frontend/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+    <script src="{{asset('frontend/vendors/isotope/isotope-min.js')}}"></script>
+    <script src="{{asset('frontend/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('frontend/js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{asset('frontend/js/mail-script.js')}}"></script>
+    <script src="{{asset('frontend/vendors/jquery-ui/jquery-ui.js')}}"></script>
+    <script src="{{asset('frontend/vendors/counter-up/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('frontend/vendors/counter-up/jquery.counterup.js')}}"></script>
+    <script src="{{asset('frontend/js/theme.js')}}"></script>
  
 </body>
 </html>
