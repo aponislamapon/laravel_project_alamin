@@ -1,11 +1,11 @@
-
+@extends('home.layouts.footercart')
 
 @extends('home.pages.layout')
  
 @section('title', 'Cart')
  
 @section('content')
-
+@extends('home.layouts.navcart')
 
     @if(session('success'))
         <div class="btn btn-success">{{session('success')}}</div>
