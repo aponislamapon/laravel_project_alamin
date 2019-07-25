@@ -29,7 +29,7 @@
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="#" data-toggle="modal" data-target="#pro{{$product['id']}}"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image']}}" >
+                        <a href="#" data-toggle="modal" data-target="#pro{{$product['id']}}"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image'], $product['product_description']}}" >
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
@@ -100,10 +100,7 @@
                 </li>
               </ul>
               <p>
-                Mill Oil is an innovative oil filled radiator with the most
-                modern technology. If you are looking for something that can
-                make your interior look awesome, and at the same time give you
-                the pleasant warm feeling during the winter.
+                {{$product['product_description']}}
               </p>
               <div class="product_count">
                 <label for="qty">Quantity:</label>
