@@ -76,7 +76,7 @@
 										<i class="halflings-icon white edit"></i>  
 									</a>
 										<input type="hidden" name="_method" value="DELETE">
-									<button class="btn btn-danger" type="submit"><i class="halflings-icon white trash"></i></button>
+									<button onclick="alert('Are You Sure to delete this ..!')" class="btn btn-danger" type="submit"><i class="halflings-icon white trash"></i></button>
 									</form>
 								</td>
 							</tr>

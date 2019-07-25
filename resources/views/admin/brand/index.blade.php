@@ -77,7 +77,7 @@
 										{{csrf_field()}}
 										<input type="hidden" name="_method" value="DELETE">
 
-										<button class="btn btn-danger" href="#">
+										<button onclick="alert('Are You Sure to delete this ..!')" class="btn btn-danger" href="#">
 										<i class="halflings-icon white trash"></i> 
 										</button>
 
