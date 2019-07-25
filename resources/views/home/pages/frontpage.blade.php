@@ -29,7 +29,7 @@
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="#" data-toggle="modal" data-target="#pro"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image']}}" >
+                        <a href="#" data-toggle="modal" data-target="#pro{{$product['id']}}"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image']}}" >
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
@@ -52,19 +52,17 @@
                   </div>
                 </div>
 
-@endforeach
+
                 
 
                
-              </div>
-            </div>
 <!-- -------------------------- -->
 
 
 
 
                         <!-- modal -->
-    <div class="modal fade" id="pro" tabindex="-1" role="dialog" aria-labelledby="abcdef" aria-hidden="true">
+    <div class="modal fade" id="pro{{$product['id']}}" tabindex="-1" role="dialog" aria-labelledby="abcdef" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -87,8 +85,8 @@
             </div>
             <div class="col-md-7">
               <div class="">
-              <h3>Product Name</h3>
-              <h3><span id="fav-id"></span></h3>
+              <h3>{{$product['product_name']}}</h3>
+              <h3></h3>
               
               <h2>$149.99</h2>
               <ul class="list">
@@ -148,19 +146,10 @@
         </div>
       </div>
     </div><!-- Modal -->
+@endforeach
+              </div>
+            </div>
 
-
-     <script>
-  $(function() {
-    $('#pro').on("show.bs.modal", function (e) {
-         
-         $("#pro").html($(e.relatedTarget).data('id'));
-         $("#pro").html($(e.relatedTarget).data('photo'));
-         
-         $("#fav-id").html($(e.relatedTarget).data('id'));
-         $("#fav-photo").html($(e.relatedTarget).data('photo'));
-    });
-});
-  </script> 
+  
 
 @endsection
