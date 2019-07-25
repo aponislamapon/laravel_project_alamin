@@ -16,14 +16,14 @@
 							<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
 						</div>
 					</div>
-					<div class="box-content">
+					<div class="box-content" style="padding-left: 50px;">
 						<form  action="{{action('ProductController@update', $product['id'])}}" method="post" enctype="multipart/form-data">
 							{{csrf_field()}}
 							
 							<input type="hidden" name="_method" value="PATCH">
 
 							   <div class="form-group">
-							    <label style="color: black;">Product Category:</label>
+							    <label style="color: black;"><b>Product Category :</b></label>
 							    <select name="cat_id" id="">
 							    	<option value="">Select One</option>
 							    	<option value="1">Mobile</option>
@@ -31,7 +31,7 @@
 							    </select>
 							  </div>
 							  <div class="form-group">
-							    <label style="color: black;">Product Brand:</label>
+							    <label style="color: black;"><b>Product Brand :</b></label>
 							    <select name="brand_id" id="">
 							    	<option value="">Select One</option>
 							    	<option value="1">Apple</option>
@@ -39,29 +39,26 @@
 							    </select>
 							  </div>
 							  <div class="form-group">
-							    <label style="color: black;">Product Name:</label>
+							    <label style="color: black;"><b>Product Name :</b></label>
 							    <input type="text" name="product_name" value="{{$product['product_name']}}" class="form-control"  placeholder="Enter Product Name">
 							  </div>
 							  <div class="form-group">
-							    <label style="color: black;">Product Name:</label>
+							    <label style="color: black;"><b>Product Description :</b></label>
 							    
-							    <textarea name="product_description" id="" cols="30" rows="10">{{$product['product_description']}}</textarea>
+							    <textarea class="form-control" name="product_description" id="" cols="30" rows="3">{{$product['product_description']}}</textarea>
 							  </div>
 
 							  
 							   <div class="form-group">
 							   
-							    <label style="color: black;">Product Image:</label>
+							    <label style="color: black;"><b>Product Image :</b></label>
 			
 			 <img style="height: 100px; width: 50px;" src="{{asset('/images/'. $product['product_image']),$product['product_name']}}" alt="abc">
 
 							    <input type="file" name="product_image[]" class="form-control">
 							  </div>
 
-							  <!-- <div class="form-group">
-							    <label style="color: black;">Product Image:</label>
-							    <input type="text" name="product_image" class="form-control"  placeholder="Enter Product Price" value="{{$product['product_image']}}">
-							  </div> -->
+							 
 
 
 
@@ -69,11 +66,11 @@
 
 
 							   <div class="form-group">
-							    <label style="color: black;">Product Price:</label>
+							    <label style="color: black;"><b>Product Price :</b></label>
 							    <input type="text" name="product_price" class="form-control"  placeholder="Enter Product Price" value="{{$product['product_price']}}">
 							  </div>
 							  <div class="form-group">
-							    <label style="color: black;">Product Quantity:</label>
+							    <label style="color: black;"><b>Product Quantity :</b></label>
 							    <input type="text" name="product_qty" class="form-control"  placeholder="Enter Product Quantity" value="{{$product['product_qty']}}">
 							  </div>
 
