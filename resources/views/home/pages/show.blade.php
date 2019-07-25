@@ -29,7 +29,7 @@
                         alt=""
                       />
                       <div class="p_icon">
-                        <a href="#" data-toggle="modal" data-target="#abc">
+                        <a href="#" data-toggle="modal" data-target="#abc{{$product['id']}}"  data-id="{{$product['id']}}"  data-photo="{{$product['product_image']}}">
                           <i class="ti-eye"></i>
                         </a>
                         <a href="#">
@@ -52,19 +52,10 @@
                   </div>
                 </div>
 
-@endforeach
-                
-
-               
-              </div>
-            </div>
-
-
-
 
 
                         <!-- modal -->
-    <div class="modal fade" id="abc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="abc{{$product['id']}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -75,26 +66,28 @@
           </div>
           <div class="modal-body">
         
-          <div class="row">
+                  <div class="row">
 
             
           
             <div class="col-md-5">
+              <img style="width: 100%;" src="{{asset('/images/'.$product['product_image'])}}" alt="dsfads">
 
-             <?php   $de = json_decode($product['product_image']);  ?>
-            <img class="card-img" src="{{asset('/images/'. $de[1])}}" alt=""/>
+             
 
             </div>
             <div class="col-md-7">
               <div class="">
-              <h3>Faded SkyBlu Denim Jeans</h3>
-              <h2>$149.99</h2>
+              <h3>{{$product['product_name']}}</h3>
+              <h3></h3>
               <ul class="list">
-                <li>
+              <li>
                   <a class="active" href="#">
-                    <span>Category</span> : Household</a
-                  >
+                    <span>Price : $ <b>{{$product['product_price']}}</b> </span>
+                  
                 </li>
+              
+              
                 <li>
                   <a href="#"> <span>Availibility</span> : In Stock</a>
                 </li>
@@ -147,6 +140,18 @@
         </div>
       </div>
     </div><!-- Modal -->
+
+
+@endforeach
+                
+
+               
+              </div>
+            </div>
+
+
+
+
 
 
 
