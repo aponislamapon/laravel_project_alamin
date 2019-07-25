@@ -87,14 +87,14 @@
               <div class="">
               <h3>{{$product['product_name']}}</h3>
               <h3></h3>
-              
-              <h2>$149.99</h2>
               <ul class="list">
-                <li>
+              <li>
                   <a class="active" href="#">
-                    <span>Category</span> : Household</a
-                  >
+                    <span>Price : $ <b>{{$product['product_price']}}</b> </span>
+                  
                 </li>
+              
+              
                 <li>
                   <a href="#"> <span>Availibility</span> : In Stock</a>
                 </li>
