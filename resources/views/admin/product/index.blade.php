@@ -24,7 +24,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" style="padding-left: 50px;">
 		<form action="{{action('ProductController@store')}}" method="post" enctype="multipart/form-data">
 			{{csrf_field()}}
 
@@ -65,10 +65,11 @@
 		    <label>Product Image:</label>
 		    <input type="file" name="product_image[]" class="form-control"  >
 		  </div>
-		  <!-- <div class="form-group">
-		    <label>Product Image:</label>
-		    <input type="text" name="product_image" class="form-control"  placeholder="Enter Product name">
-		  </div> -->
+		  <div class="form-group">
+		    <label>Product Description:</label>
+		    
+		    <textarea name="product_description" class="form-control" id="" cols="30" rows="3" placeholder="Enter product details...."></textarea>
+		  </div>
 
 
 
@@ -114,6 +115,7 @@
 								  <th>Image</th>
 								  <th>Price</th>
 								  <th>Quantity</th>
+								  <th>Product Description</th>
 								  <th>Category</th>
 								  <th>Brand</th>
 								  <th>Actions</th>
@@ -132,6 +134,7 @@
 								
 								<td class="center">{{$product['product_price']}}</td>
 								<td class="center">{{$product['product_qty']}}</td>
+								<td class="center">{{$product['product_description']}}</td>
 								<td class="center">{{$product['cat_id']}}</td>
 								<td class="center">{{$product['brand_id']}}</td>
 								

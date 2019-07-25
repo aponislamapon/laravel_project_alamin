@@ -13,17 +13,15 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('brands')->insert([
         	[
-            'brand_name' => 'Apple',
-        	],
-        	[
             'brand_name' => 'Samsung',
         	],
         	[
-            'brand_name' => 'Lenovo',
+            'brand_name' => 'Apple',
         	],
         	[
-            'brand_name' => 'HP',
+            'brand_name' => 'Hp',
         	],
+        	
             
         ]);
         DB::table('cats')->insert([

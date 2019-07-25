@@ -228,7 +228,7 @@
                     </div>
                     <div class="form-group">
                       <label>Password:</label>
-                      <input type="text" name="password" required="required" class="form-control"  placeholder="Enter Password">
+                      <input type="password" name="password" required="required" class="form-control"  placeholder="Enter Password">
                     </div>
                     <div class="form-group">
                       <label>Mobile:</label>

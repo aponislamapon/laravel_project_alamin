@@ -20,8 +20,8 @@ class CreateProductsTable extends Migration
             $table->string('product_name');
             $table->integer('product_price');
             $table->integer('product_qty');
-            // $table->integer('product_image');
-             $table->string('product_image');
+            $table->string('product_description');
+            $table->string('product_image');
 
            
 

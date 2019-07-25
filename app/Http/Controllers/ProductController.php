@@ -65,6 +65,7 @@ class ProductController extends Controller
         $products->product_name=$request->get('product_name'); //title
         $products->product_price=$request->get('product_price');
         $products->product_qty=$request->get('product_qty');
+        $products->product_description=$request->get('product_description');
 
          $products->product_name= $request->product_name;
         $products->product_image=$data;  
@@ -132,6 +133,7 @@ class ProductController extends Controller
         $products->product_name=$request->get('product_name'); //title
         $products->product_price=$request->get('product_price');
         $products->product_qty=$request->get('product_qty');
+        $products->product_description=$request->get('product_description');
 
          $products->product_name= $request->product_name;
         $products->product_image=$data;   

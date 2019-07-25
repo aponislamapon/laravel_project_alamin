@@ -42,6 +42,11 @@
 							    <label style="color: black;">Product Name:</label>
 							    <input type="text" name="product_name" value="{{$product['product_name']}}" class="form-control"  placeholder="Enter Product Name">
 							  </div>
+							  <div class="form-group">
+							    <label style="color: black;">Product Name:</label>
+							    
+							    <textarea name="product_description" id="" cols="30" rows="10">{{$product['product_description']}}</textarea>
+							  </div>
 
 							  
 							   <div class="form-group">
