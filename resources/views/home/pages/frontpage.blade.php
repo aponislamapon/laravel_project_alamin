@@ -41,7 +41,7 @@
                       </div>
                     </div>
                     <div class="product-btm">
-                      <a href="{{action('ProductdetailsController@index')}}" class="d-block">
+                      <a href="{{action('ProductdetailsController@index', $product['id'])}}" class="d-block">
                         <h4>{{$product['product_name']}}</h4>
                       </a>
                       <div class="mt-3">

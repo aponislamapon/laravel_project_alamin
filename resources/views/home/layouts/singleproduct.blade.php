@@ -60,7 +60,7 @@
 
               
              
-              <img class="d-block w-100" src="{{URL::to('frontend/img/product/single-product/s-product-1.jpg')}}" alt="First slide"/>
+              <img class="d-block w-100" src="{{asset('/images/'. $product['product_image'])}}" alt="First slide"/>
                  
 
 
@@ -74,23 +74,16 @@
           </div>
           <div class="col-lg-5 offset-lg-1">
             <div class="s_product_text">
-              <h3>Faded SkyBlu Denim Jeans</h3>
-              <h2>$149.99</h2>
+              <h3>{{$product['product_name']}}</h3>
+              <h2>${{$product['product_price']}}</h2>
               <ul class="list">
-                <li>
-                  <a class="active" href="#">
-                    <span>Category</span> : Household</a
-                  >
-                </li>
+                
                 <li>
                   <a href="#"> <span>Availibility</span> : In Stock</a>
                 </li>
               </ul>
               <p>
-                Mill Oil is an innovative oil filled radiator with the most
-                modern technology. If you are looking for something that can
-                make your interior look awesome, and at the same time give you
-                the pleasant warm feeling during the winter.
+                {{$product['product_description']}}
               </p>
               <div class="product_count">
                 <label for="qty">Quantity:</label>
@@ -119,7 +112,7 @@
                 </button>
               </div>
               <div class="card_area">
-                <a class="main_btn" href="#">Add to Cart</a>
+                <a class="main_btn" href="{{ action('HomeController@addToCart',$product['id'])}}">Add to Cart</a>
                 <a class="icon_btn" href="#">
                   <i class="lnr lnr lnr-diamond"></i>
                 </a>

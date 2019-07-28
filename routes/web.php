@@ -40,7 +40,7 @@ Route::delete('remove-from-cart', 'HomeController@remove');
 
 
 
-Route::get('/details', 'ProductdetailsController@index');
+Route::get('/details/{id}', 'ProductdetailsController@index');
 
 //backend route
 Route::get('/admin', 'DashboardController@index');
