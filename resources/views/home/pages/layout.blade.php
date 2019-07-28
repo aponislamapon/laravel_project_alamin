@@ -45,7 +45,10 @@
                 <button type="button" class="btn btn-info" data-toggle="dropdown">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count(session('cart')) }}</span>
                 </button>
-                <div class="dropdown-menu">
+                <div class="dropdown-menu" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 15.19);min-width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;  top: 100%;
+    left: -100px;">
                     <div class="row total-header-section">
                         <div class="col-lg-6 col-sm-6 col-6">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="badge badge-pill badge-danger">{{ count(session('cart')) }}</span>
@@ -62,20 +65,25 @@
                             <p>Total: <span class="text-info">$ {{ $total }}</span></p>
                         </div>
                     </div>
+                    <hr>
  
                     @if(session('cart'))
                         @foreach(session('cart') as $id => $details)
                             <div class="row cart-detail">
                                 <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                                    <img src="{{ $details['photo'] }}" />
+
+                                    <img style="height: 100px; width: 60px; padding: 10px;" src="{{asset('images/'. $details['photo'] )}}" />
                                 </div>
                                 <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
-                                    <p>{{ $details['name'] }}</p>
-                                    <span class="price text-info"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
+                                    <p style="font-weight: bold; font-size: 16px;">{{ $details['name'] }}</p>
+                                    <p><span class="price text-info"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span></p>
+                                    
                                 </div>
                             </div>
                         @endforeach
                     @endif
+                    <br><br>
+                    <hr>
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
                             <a href="{{ url('cart') }}" class="btn btn-primary btn-block">View all</a>
