@@ -122,7 +122,7 @@
                 </button>
               </div>
               <div class="card_area">
-                <a class="main_btn" href="#">Add to Cart</a>
+                <a class="main_btn" href="{{ action('HomeController@addToCart',$product['id'])}}">Add to Cart</a>
                 
               </div>
             </div>
