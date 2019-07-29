@@ -49,16 +49,17 @@
 <!-- content -->
 <section class="checkout_area section_gap">
       <div class="container">
-<div class="billing_details">
-          <div class="row">
-            <div class="col-lg-6">
-              <h3>Shipping address Details</h3>
-              <form
+        <form
                 class="row contact_form"
                 action="#"
                 method="post"
                 novalidate="novalidate"
               >
+<div class="billing_details">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3>Shipping address Details</h3>
+              
                 <div class="col-md-12 form-group p_star">
                   <input
                     type="text"
@@ -150,9 +151,20 @@
                     placeholder="Postcode/ZIP"
                   />
                 </div>
+                <div class="col-md-12 form-group p_star">
+                  <label for="">Bkash Transaction ID :</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="trx"
+                    name="trx"
+                    placeholder="Bkash Trx id (MXL434522M7706111V)"
+                  />
+                  
+                </div>
                 
                 
-              </form>
+              
             </div>
             <div class="col-lg-6">
 
@@ -203,15 +215,19 @@
                     <div class="check"></div>
                   </div>
                   <p>
-                    Please send a check to Store Name, Store Street, Store Town,
-                    Store State / County, Store Postcode.
+                   Bkash Wallet Number : 01753334444 <br>
+                   Check your total Amount. <br>
+                   Confirm your payment. <br>
+                   Keep and Put your transaction ID Number. <br>
+
                   </p>
+                  
                 </div>
                 <div class="payment_item active">
                   <div class="radion_btn">
                     <input type="radio" id="f-option6" name="selector" />
-                    <label for="f-option6">Paypal </label>
-                    <img src="img/product/single-product/card.jpg" alt="" />
+                    <label for="f-option6">Bkash </label>
+                    <img style="width: 80px; height: 25px;" src="{{URL::to('frontend/img/product/single-product/card1.gif')}}" alt="" />
                     <div class="check"></div>
                   </div>
                   <p>
@@ -224,17 +240,22 @@
                   <label for="f-option4">I’ve read and accept the </label>
                   <a href="#">terms & conditions*</a>
                 </div>
-                <a class="main_btn" href="#">Proceed to Paypal</a>
+                
               </div>
 
  
             </div>
-          </div>
+          </div><br><br><br><br>
         </div>
+        
+        <input class="main_btn btn-block" type="submit" name="submit" value="Proceed to Bkash">
+         
+      </form>
       </div>
+
   </section>
 <!-- content -->
-
+<br><br><br><br><br><br>
 
 
 
