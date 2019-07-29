@@ -199,7 +199,7 @@
                     <div class="check"></div>
                   </div>
                   <p>
-                   Bkash Wallet Number : 01753334444 <br>
+                   Bkash Wallet Number : <i style="font-weight: bold;">01753334444</i>  <br>
                    Check your total Amount. <br>
                    Confirm your payment. <br>
                    Keep and Put your transaction ID Number. <br>
