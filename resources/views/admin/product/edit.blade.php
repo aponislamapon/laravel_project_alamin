@@ -26,22 +26,28 @@
 							    <label style="color: black;"><b>Product Category :</b></label>
 							    <select name="cat_id" id="">
 							    	<option value="">Select One</option>
-							    	<option value="1">Mobile</option>
-							    	<option value="2">Copmuter</option>
+							@foreach( $allcategory as $category)  
+							    	<option value="{{$category['id']}}">{{$category['category_name']}}</option>
+
+							 @endforeach
 							    </select>
 							  </div>
 							  <div class="form-group">
 							    <label style="color: black;"><b>Product Brand :</b></label>
 							    <select name="brand_id" id="">
 							    	<option value="">Select One</option>
-							    	<option value="1">Apple</option>
-							    	<option value="2">HP</option>
+							@foreach($allBrand as $brand)
+							    	<option value="{{$brand['id']}}">{{$brand['brand_name']}}</option>
+							    	
+							@endforeach
 							    </select>
 							  </div>
 							  <div class="form-group">
 							    <label style="color: black;"><b>Product Name :</b></label>
 							    <input type="text" name="product_name" value="{{$product['product_name']}}" class="form-control"  placeholder="Enter Product Name">
 							  </div>
+
+
 							  <div class="form-group">
 							    <label style="color: black;"><b>Product Description :</b></label>
 							    

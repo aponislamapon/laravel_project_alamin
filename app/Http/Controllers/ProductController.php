@@ -97,7 +97,9 @@ class ProductController extends Controller
     public function edit($id)
     {   
         $product= Product::find($id);
-        return view('admin.product.edit', compact('product'));
+        $allcategory = Cat::all()->toArray();
+         $allBrand=Brand::all()->toArray();
+        return view('admin.product.edit', compact('product', 'allcategory', 'allBrand'));
     }
 
     /**
