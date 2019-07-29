@@ -59,9 +59,9 @@
 							   
 							    <label style="color: black;"><b>Product Image :</b></label>
 			
-			 <img style="height: 100px; width: 50px;" src="{{asset('/images/'. $product['product_image']),$product['product_name']}}" alt="abc">
+			<img src="{{url($product['product_image']? 'images/'.$product['product_image']:'images/noimage.jpg')}}" id="image_upload_preview" alt="Product Image" class="img-responsive" style="max-height: 100px">
 
-							    <input type="file" name="product_image[]" class="form-control">
+							    <input type="file" id="inputFile" name="product_image[]" class="form-control">
 							  </div>
 
 							 
@@ -95,6 +95,26 @@
 				</div><!--/span-->
 			
 			</div>
+
+
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+  function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image_upload_preview').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#inputFile").change(function () {
+        readURL(this);
+    });
+</script>
 
 
 @stop
