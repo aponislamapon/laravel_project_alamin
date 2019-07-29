@@ -69,8 +69,9 @@
         </tfoot>
        
     </table>
-
+<hr>
          <div class="row">
+            
             <div class="col md-10">
                  <a class="btn btn-warning btn-block" href="{{ url('/') }}"><i class="fa fa-angle-left"></i><span>  Continue Shopping  </span> </a>
             </div>
