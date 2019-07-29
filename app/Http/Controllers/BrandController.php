@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Brand;
+use App\Cat;
+use App\Product;
+
 
 class BrandController extends Controller
 {
@@ -55,7 +58,10 @@ class BrandController extends Controller
      */
     public function show($id)
     {
-        //
+        $allbrand = Brand::all()->toArray();
+        $allcategory = Cat::all()->toArray();
+        $product = Product::where('brand_id','=',$id)->get();
+        return view('home.pages.show_brand', compact('product','allbrand','allcategory'));
     }
 
     /**

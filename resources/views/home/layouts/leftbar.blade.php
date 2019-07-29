@@ -24,7 +24,7 @@
                   <ul class="list">
               @foreach( $allbrand as $abc )
                     <li>
-                      <a href="#">{{$abc['brand_name']}}</a>
+                      <a href="{{action('BrandController@show', $abc['id'])}}">{{$abc['brand_name']}}</a>
                     </li>
               @endforeach
                   </ul>

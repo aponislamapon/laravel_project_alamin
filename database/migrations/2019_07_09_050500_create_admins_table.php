@@ -19,6 +19,7 @@ class CreateAdminsTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->enum('is_active', ['active', 'inactive']);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
