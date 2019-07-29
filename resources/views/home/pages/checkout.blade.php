@@ -64,24 +64,14 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="first"
                     name="name"
                   />
                   <span
                     class="placeholder"
-                    data-placeholder="First name"
+                    data-placeholder="Full name"
                   ></span>
                 </div>
-                <div class="col-md-12 form-group p_star">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="last"
-                    name="name"
-                  />
-                  <span class="placeholder" data-placeholder="Last name"></span>
-                </div>
-                
+                              
                 <div class="col-md-12 form-group p_star">
                   <input
                     type="text"
@@ -135,13 +125,7 @@
                   />
                   <span class="placeholder" data-placeholder="Town/City"></span>
                 </div>
-                <div class="col-md-12 form-group p_star">
-                  <select class="country_select">
-                    <option value="1">District</option>
-                    <option value="2">District</option>
-                    <option value="4">District</option>
-                  </select>
-                </div>
+               
                 <div class="col-md-12 form-group">
                   <input
                     type="text"
