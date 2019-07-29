@@ -10,6 +10,7 @@
     @if(session('success'))
         <div class="btn btn-success">{{session('success')}}</div>
     @endif
+    <br><br><br>
     <table id="cart" class="table table-hover table-condensed">
         <thead>
         <tr>
@@ -52,18 +53,31 @@
         @endif
  
         </tbody>
+
         <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Total {{ $total }}</strong></td>
-        </tr>
+       
         <tr>
-            <td><a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+
+            <td></td>
+            
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center"><strong>Total ${{ $total }}</strong></td>
+            <td></td>
+            <td></td>
         </tr>
+
         </tfoot>
+       
     </table>
- 
+
+         <div class="row">
+            <div class="col md-10">
+                 <a class="btn btn-warning btn-block" href="{{ url('/') }}"><i class="fa fa-angle-left"></i><span>  Continue Shopping  </span> </a>
+            </div>
+            <div class="col md-2">
+                <a class="btn btn-success btn-block" href=""><span>  Ready to Checkout  </span> </a>
+            </div>
+        </div>
 @endsection
 
 @section('scripts')
