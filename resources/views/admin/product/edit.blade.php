@@ -97,7 +97,7 @@
 			</div>
 
 
-<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script	src="{{asset('backend/js/jquery-1.9.1.min.js')}}"></script>
 <script> 
   function readURL(input) {
         if (input.files && input.files[0]) {
