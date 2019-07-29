@@ -71,14 +71,15 @@
     </table>
 <hr>
          <div class="row">
-            
+
             <div class="col md-10">
                  <a class="btn btn-warning btn-block" href="{{ url('/') }}"><i class="fa fa-angle-left"></i><span>  Continue Shopping  </span> </a>
             </div>
             <div class="col md-2">
-                <a class="btn btn-success btn-block" href=""><span>  Ready to Checkout  </span> </a>
+                <a class="btn btn-success btn-block" href="{{action('CheckoutController@index')}}"><span>  Ready to Checkout  </span> </a>
             </div>
         </div>
+        <br><br><br><br><br><br><br><br>
 @endsection
 
 @section('scripts')
