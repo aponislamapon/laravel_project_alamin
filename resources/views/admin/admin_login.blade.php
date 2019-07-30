@@ -31,7 +31,7 @@
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('{{URL::to('asset_login/images/bg-01.jpg')}}');">
-			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 15.19);">
 				<form class="login100-form validate-form" method="post" action="{{url('/admin-dashboard')}}">
 					{{csrf_field()}}
 					<span class="login100-form-title p-b-49">
@@ -65,7 +65,7 @@
 						</div>
 					</div>
 
-					<div class="txt1 text-center p-t-54 p-b-20">
+					<!-- <div class="txt1 text-center p-t-54 p-b-20">
 						<span>
 							Or Sign Up Using
 						</span>
@@ -93,7 +93,7 @@
 						<a href="#" class="txt2">
 							Sign Up
 						</a>
-					</div>
+					</div> -->
 				</form>
 			</div>
 		</div>
