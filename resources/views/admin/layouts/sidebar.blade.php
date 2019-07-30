@@ -8,7 +8,7 @@
 		<hr>
 		
 		<ul class="nav nav-tabs nav-stacked main-menu">
-			<li><a href="{{url('admin')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>		
+			<li><a href="{{url('dashboard')}}"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>		
 			<li><a href="{{url('admin/brand')}}"><i class="icon-eye-open"></i><span class="hidden-tablet"> Brands</span></a></li>
 			<li><a href="{{url('admin/category')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Categories</span></a></li>
 			<li><a href="{{url('admin/product')}}"><i class="icon-tasks"></i><span class="hidden-tablet"> Products</span></a></li>

@@ -39,5 +39,25 @@ class UsersTableSeeder extends Seeder
         	],
             
         ]);
+
+        DB::table('countrys')->insert([
+            [
+            'country_name' => 'Bangladesh',
+            'shipping_charge' => '5',
+            ],
+            [
+            'country_name' => 'India',
+            'shipping_charge' => '6',
+            ],
+            [
+            'country_name' => 'Pakistan',
+            'shipping_charge' => '7',
+            ],
+            [
+            'country_name' => 'Nepal',
+            'shipping_charge' => '8',
+            ],
+            
+        ]);
     }
 }
