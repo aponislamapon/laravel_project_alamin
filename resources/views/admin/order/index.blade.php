@@ -31,7 +31,7 @@
 									  <th>Trx Id</th>
 
 									  <th>Customer Name</th>
-									  <th>Email</th>
+									  <!-- <th>Email</th> -->
 									  <th>Mobile</th>
 
 									  <th>Country</th>
@@ -48,10 +48,10 @@
 									<td class="center">{{$order['id']}}</td>
 									<td class="center"></td>
 									<td class="center"></td>
-									<td class="center">{{$order['trx_id']}}</td>
 									<td class="center"></td>
+									<td class="center">{{$order['trx_id']}}</td>
 									<td class="center">{{$order['customer_name']}}</td>
-									<td class="center">{{$order['email']}}</td>
+									<!-- <td class="center">{{$order['email']}}</td> -->
 									<td class="center">{{$order['phone']}}</td>
 									<td class="center">{{$order['country']}}</td>
 									<td class="center">{{$order['city']}}</td>
