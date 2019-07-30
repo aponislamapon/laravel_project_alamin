@@ -63,7 +63,7 @@ class UsersTableSeeder extends Seeder
         DB::table('admins')->insert([
             [
             'admin_email' => 'alamin@gmail.com',
-            'admin_password' => 'alamin',
+            'admin_password' =>'alamin',
             'admin_name' => 'alamin',
             ],
            
