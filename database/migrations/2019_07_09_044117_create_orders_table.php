@@ -31,7 +31,7 @@ class CreateOrdersTable extends Migration
             $table->string('address_line');
             
 
-            $table->string('payment_status');
+            $table->string('payment_status')->default('1');
             
 
             $table->timestamps();
