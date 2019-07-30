@@ -14,15 +14,15 @@ class DashboardController extends Controller
     }
     
     public function dashboard(Request $request){
-    	$email= $request->email;
-    	$password= $request->password;
+    	$admin_email= $request->admin_email;
+    	$admin_password= $request->admin_password;
     	$result= DB::table('admins')
-    			->where('email', $email)
-    			->where('password',$password)
+    			->where('admin_email', $admin_email)
+    			->where('admin_password',$admin_password)
     			->first();
     			if($result){
-    				Session::put('name', $result->name);
-    				Session::put('id', $request->id);
+    				Session::put('admin_name', $result->admin_name);
+    				Session::put('admin_id', $request->admin_id);
     				return redirect('/dashboard');
     			}else{
     				Session::put('messege', 'Email or password invalid');

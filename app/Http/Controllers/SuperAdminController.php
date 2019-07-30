@@ -24,8 +24,8 @@ class SuperAdminController extends Controller
 
     public function AdminAuthCheck(){
 
-    	$id=Session::get('id');
-    	if($id){
+    	$admin_id=Session::get('admin_id');
+    	if($admin_id){
     		return;
     	}else{
     		return Redirect::to('/admin')->send();
