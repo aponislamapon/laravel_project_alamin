@@ -57,33 +57,20 @@
               <h3>Shipping address Details</h3>
               
                 <div class="col-md-12 form-group ">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="customer_name"
-                    required="required"
+                <input type="text" class="form-control" name="customer_name" required="required"
                     placeholder="Full name"
                   />
                   
                 </div>
                               
                 <div class="col-md-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="number"
-                    name="phone"
-                    required="required"
+                  <input type="text" class="form-control" id="number" name="phone" required="required"
                     placeholder="Phone Number"
                   />
                   
                 </div>
                 <div class="col-md-12 form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
+                  <input type="email" class="form-control" id="email" name="email"
                     required="required"
                     placeholder="Enter Email Address"
                   />
@@ -104,11 +91,7 @@
                   </div>
                 </div>
                 <div class="col-md-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="add1"
-                    name="address_line"
+                  <input type="text" class="form-control" id="add1" name="address_line"
                     required="required"
                     placeholder="Enter Address line"
                   />
@@ -116,39 +99,35 @@
                 </div>
                 
                 <div class="col-md-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="city"
-                    name="city"
-                    required="required"
+                  <input type="text" class="form-control" id="city" name="city" required="required"
                     placeholder="City / Town"
                   />
                  
                 </div>
                
                 <div class="col-md-12 form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="zip"
-                    name="zip_code"
+                  <input type="text" class="form-control" id="zip" name="zip_code"
                     placeholder="Postcode/ZIP"
                     required="required"
                   />
                 </div>
                 <div class="col-md-12 form-group p_star">
                   <label for="">Bkash Transaction ID :</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="trx"
-                    name="trx_id"
-                    required="required"
+                  <input type="text" class="form-control" id="trx" name="trx_id" required="required"
                     placeholder="Bkash Trx id (MXL434...M77...11V)"
                   />
                   
                 </div>
+
+
+
+  <!-- hidden value pass database -->
+
+                <input type="hidden" name="product_id" value="120">
+                <input type="hidden" name="product_name" value="iPhone xoom">
+                <input type="hidden" name="qty" value="5">
+                
+  <!-- hidden value pass database -->
                 
 
                 

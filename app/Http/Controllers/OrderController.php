@@ -38,6 +38,13 @@ class OrderController extends Controller
     public function store(Request $request)
     {
         $order = new Order;
+
+// hidden field
+        $order->product_id=$request->get('product_id');
+        $order->product_name=$request->get('product_name');
+        $order->qty=$request->get('qty');
+
+
         $order->customer_name=$request->get('customer_name');
         $order->phone=$request->get('phone');
         $order->email=$request->get('email');

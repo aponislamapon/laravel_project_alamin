@@ -46,9 +46,11 @@
 								<tr>
 									
 									<td class="center">{{$order['id']}}</td>
-									<td class="center"></td>
-									<td class="center"></td>
-									<td class="center"></td>
+
+									<td class="center">{{$order['product_id']}}</td>
+									<td class="center">{{$order['product_name']}}</td>
+									<td class="center">{{$order['qty']}}</td>
+									
 									<td class="center">{{$order['trx_id']}}</td>
 									<td class="center">{{$order['customer_name']}}</td>
 									<!-- <td class="center">{{$order['email']}}</td> -->
