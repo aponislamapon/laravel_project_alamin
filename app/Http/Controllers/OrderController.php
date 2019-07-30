@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Order;
+use App\Product;
 
 class OrderController extends Controller
 {
@@ -13,7 +15,8 @@ class OrderController extends Controller
      */
     public function index()
     {
-        return view('admin.order.index');
+        $orders = Order::all()->toArray();
+        return view('admin.order.index', compact('orders'));
     }
 
     /**
@@ -34,7 +37,21 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $order = new Order;
+        $order->customer_name=$request->get('customer_name');
+        $order->phone=$request->get('phone');
+        $order->email=$request->get('email');
+        $order->country=$request->get('country_name');
+        $order->address_line=$request->get('address_line');
+        $order->city=$request->get('city');
+        $order->zip_code=$request->get('zip_code');
+        $order->trx_id=$request->get('trx_id');
+        
+
+      
+
+        $order->save();
+        return redirect('/');
     }
 
     /**

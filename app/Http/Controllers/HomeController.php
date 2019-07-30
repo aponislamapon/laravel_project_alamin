@@ -7,6 +7,7 @@ use App\Brand;
 use App\Cat;
 use App\Product;
 
+
 class HomeController extends Controller
 {
     /**

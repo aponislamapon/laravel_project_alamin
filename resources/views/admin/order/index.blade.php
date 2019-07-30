@@ -30,6 +30,10 @@
 									  <th>Quantity</th>
 									  <th>Trx Id</th>
 
+									  <th>Customer Name</th>
+									  <th>Email</th>
+									  <th>Mobile</th>
+
 									  <th>Country</th>
 									  <th>City</th>
 									  <th>Zip Code</th>
@@ -38,21 +42,27 @@
 								  </tr>
 							  </thead>   
 							  <tbody>
+@foreach($orders as $order)
 								<tr>
-									<td>1</td>
-									<td class="center">1</td>
-									<td class="center">Sumsung Galaxy $10</td>
-									<td class="center">1</td>
-									<td class="center">9L434522M7706801A</td>
+									
+									<td class="center">{{$order['id']}}</td>
 									<td class="center"></td>
 									<td class="center"></td>
+									<td class="center">{{$order['trx_id']}}</td>
 									<td class="center"></td>
-									<td class="center"></td>
+									<td class="center">{{$order['customer_name']}}</td>
+									<td class="center">{{$order['email']}}</td>
+									<td class="center">{{$order['phone']}}</td>
+									<td class="center">{{$order['country']}}</td>
+									<td class="center">{{$order['city']}}</td>
+									<td class="center">{{$order['zip_code']}}</td>
+									<td class="center">{{$order['address_line']}}</td>
 									<td class="center">
 										<span class="label label-success">Completed</span>
 									</td>                                       
 								</tr>
-								<tr>
+@endforeach
+								<!-- <tr>
 									<td>4</td>
 									<td class="center">1</td>
 									<td class="center">Sumsung Galaxy $10</td>
@@ -62,11 +72,13 @@
 									<td class="center"></td>
 									<td class="center"></td>
 									<td class="center"></td>
+									<td class="center"></td>
+									<td class="center"></td>
 
 									<td class="center">
 										<span class="label label-warning">Pending</span>
 									</td>                                       
-								</tr>
+								</tr> -->
 								
 
 

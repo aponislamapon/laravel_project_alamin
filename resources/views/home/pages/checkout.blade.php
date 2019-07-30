@@ -49,81 +49,82 @@
 <!-- content -->
 <section class="checkout_area section_gap">
       <div class="container">
-        <form
-                class="row contact_form"
-                action="#"
-                method="post"
-                novalidate="novalidate"
-              >
+        <form class="row contact_form" action="{{action('OrderController@store')}}" method="post">
+          {{csrf_field()}}
 <div class="billing_details">
           <div class="row">
             <div class="col-lg-6">
               <h3>Shipping address Details</h3>
               
-                <div class="col-md-12 form-group p_star">
+                <div class="col-md-12 form-group ">
                   <input
                     type="text"
                     class="form-control"
-                    name="name"
+                    name="customer_name"
+                    required="required"
+                    placeholder="Full name"
                   />
-                  <span
-                    class="placeholder"
-                    data-placeholder="Full name"
-                  ></span>
+                  
                 </div>
                               
-                <div class="col-md-12 form-group p_star">
+                <div class="col-md-12 form-group">
                   <input
                     type="text"
                     class="form-control"
                     id="number"
-                    name="number"
+                    name="phone"
+                    required="required"
+                    placeholder="Phone Number"
                   />
-                  <span
-                    class="placeholder"
-                    data-placeholder="Phone number"
-                  ></span>
+                  
                 </div>
-                <div class="col-md-12 form-group p_star">
+                <div class="col-md-12 form-group">
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     id="email"
-                    name="compemailany"
+                    name="email"
+                    required="required"
+                    placeholder="Enter Email Address"
                   />
-                  <span
-                    class="placeholder"
-                    data-placeholder="Email Address"
-                  ></span>
+                  
                 </div>
-                <div class="col-md-12 form-group p_star">
-                  <select class="country_select">
-                    <option value="1">Country</option>
-                    <option value="2">Country</option>
-                    <option value="4">Country</option>
+                
+                <div class="col-md-12 form-group">
+                  <div class="row col-md-12">
+                    <label for="">Country :</label>
+                  <select class="country_select" name="country_name">
+                    <option value="">select one</option>
+            @foreach($countrys as $country)
+                    <option value="{{$country['country_name']}}">{{$country['country_name']}}</option>
+                    
+            @endforeach
+
                   </select>
+                  </div>
                 </div>
-                <div class="col-md-12 form-group p_star">
+                <div class="col-md-12 form-group">
                   <input
                     type="text"
                     class="form-control"
                     id="add1"
-                    name="add1"
+                    name="address_line"
+                    required="required"
+                    placeholder="Enter Address line"
                   />
-                  <span
-                    class="placeholder"
-                    data-placeholder="Address line"
-                  ></span>
+                 
                 </div>
                 
-                <div class="col-md-12 form-group p_star">
+                <div class="col-md-12 form-group">
                   <input
                     type="text"
                     class="form-control"
                     id="city"
                     name="city"
+                    required="required"
+                    placeholder="City / Town"
                   />
-                  <span class="placeholder" data-placeholder="Town/City"></span>
+                 
                 </div>
                
                 <div class="col-md-12 form-group">
@@ -131,8 +132,9 @@
                     type="text"
                     class="form-control"
                     id="zip"
-                    name="zip"
+                    name="zip_code"
                     placeholder="Postcode/ZIP"
+                    required="required"
                   />
                 </div>
                 <div class="col-md-12 form-group p_star">
@@ -141,12 +143,14 @@
                     type="text"
                     class="form-control"
                     id="trx"
-                    name="trx"
-                    placeholder="Bkash Trx id (MXL434522M7706111V)"
+                    name="trx_id"
+                    required="required"
+                    placeholder="Bkash Trx id (MXL434...M77...11V)"
                   />
                   
                 </div>
                 
+
                 
               
             </div>
@@ -178,6 +182,7 @@
                       <span class="last"> ${{ $details['price'] }}</span>
                     </a>
                   </li>
+        
                  
  @endforeach
  @endif
