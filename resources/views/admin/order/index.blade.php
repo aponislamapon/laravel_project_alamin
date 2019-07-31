@@ -60,7 +60,8 @@
 									<td class="center">{{$order['zip_code']}}</td>
 									<td class="center">{{$order['address_line']}}</td>
 									<td class="center">
-										<span class="label label-success">Completed</span>
+										<span class="label label-warning">Pending</span>
+										<!-- <span class="label label-success">Completed</span> -->
 									</td>                                       
 								</tr>
 @endforeach
