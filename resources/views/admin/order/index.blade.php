@@ -60,8 +60,16 @@
 									<td class="center">{{$order['zip_code']}}</td>
 									<td class="center">{{$order['address_line']}}</td>
 									<td class="center">
+
+									@if($order['payment_status']==1)
+										
+										<span class="label label-success">Completed</span>
+										
+										@else
 										<span class="label label-warning">Pending</span>
-										<!-- <span class="label label-success">Completed</span> -->
+										
+									@endif
+ 
 									</td>                                       
 								</tr>
 @endforeach
