@@ -121,14 +121,7 @@
 
 
 
-  <!-- hidden value pass database -->
-
-                <input type="hidden" name="product_id" value="120">
-                <input type="hidden" name="product_name" value="iPhone xoom">
-                <input type="hidden" name="qty" value="5">
-                
-  <!-- hidden value pass database -->
-                
+ 
 
                 
               
@@ -159,8 +152,18 @@
                       >{{ $details['name'] }}
                       <span class="middle">{{ $details['quantity'] }}</span>
                       <span class="last"> ${{ $details['price'] }}</span>
+                      
                     </a>
                   </li>
+
+ <!-- hidden value pass database -->
+
+                <input type="hidden" name="product_id" value="{{$id}}">
+                <input type="hidden" name="product_name" value="{{ $details['name'] }}">
+                <input type="hidden" name="qty" value="{{ $details['quantity'] }}">
+                
+  <!-- hidden value pass database -->
+                
         
                  
  @endforeach
