@@ -58,6 +58,8 @@ class OrderController extends Controller
       
 
         $order->save();
+
+        $request->session('cart')->flush();
         return redirect('/');
     }
 
