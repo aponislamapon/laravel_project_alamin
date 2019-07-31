@@ -176,6 +176,10 @@ class HomeController extends Controller
         }
     }
 
+    public function success(){
+        return view('home.pages.success');
+    }
+
 
     
 }

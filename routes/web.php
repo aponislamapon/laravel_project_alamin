@@ -29,7 +29,7 @@ Route::delete('remove-from-cart', 'HomeController@remove');
 
 Route::get('checkout', 'CheckoutController@index');
 
-
+Route::get('success', 'HomeController@success');
 
 
 
