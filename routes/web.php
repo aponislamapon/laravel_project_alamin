@@ -46,8 +46,8 @@ Route::get('/details/{id}', 'ProductdetailsController@index');
 
 //backend route
 Route::get('/admin', 'DashboardController@index');
-Route::get('/logout', 'SuperAdminController@logout');
-Route::get('/dashboard', 'SuperAdminController@index');
+Route::get('/logout', 'DashboardController@logout');
+
 Route::post('/admin-dashboard', 'DashboardController@dashboard');
 
 

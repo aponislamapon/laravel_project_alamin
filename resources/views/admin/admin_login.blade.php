@@ -32,7 +32,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('{{URL::to('asset_login/images/bg-01.jpg')}}');">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 15.19);">
-				<form class="login100-form validate-form" method="post" action="{{url('/admin-dashboard')}}">
+				<form class="login100-form validate-form" method="post" action="{{action('DashboardController@dashboard')}}">
 					{{csrf_field()}}
 					<span class="login100-form-title p-b-49">
 						Login
