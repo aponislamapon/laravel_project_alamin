@@ -34,10 +34,7 @@ class UsersTableSeeder extends Seeder
         	[
             'category_name' => 'Nootbook',
         	],
-        	[
-            'category_name' => 'Probook',
-        	],
-            
+        	            
         ]);
 
         DB::table('countrys')->insert([
