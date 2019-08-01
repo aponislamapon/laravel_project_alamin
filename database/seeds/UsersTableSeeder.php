@@ -31,9 +31,7 @@ class UsersTableSeeder extends Seeder
         	[
             'category_name' => 'Laptop',
         	],
-        	[
-            'category_name' => 'Nootbook',
-        	],
+        	
         	            
         ]);
 
