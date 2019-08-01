@@ -4,25 +4,25 @@
           <div class="row">
             <div class="col-lg-7">
               <div class="float-left">
-                <p>Phone: +01 256 25 235</p>
-                <p>email: info@eiser.com</p>
+                <p>Phone: +880 1754165534</p>
+                <p>email: aponislamapon@gmail.com</p>
               </div>
             </div>
             <div class="col-lg-5">
               <div class="float-right">
                 <ul class="right_side">
                   <li>
-                    <a href="cart.html">
+                    <a href="#">
                       gift card
                     </a>
                   </li>
                   <li>
-                    <a href="tracking.html">
+                    <a href="#">
                       track order
                     </a>
                   </li>
                   <li>
-                    <a href="contact.html">
+                    <a href="#">
                       Contact Us
                     </a>
                   </li>
