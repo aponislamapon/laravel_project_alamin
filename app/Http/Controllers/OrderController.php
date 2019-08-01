@@ -81,8 +81,9 @@ class OrderController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-        //
+    {   
+        $order=Order::find($id)->toArray();
+       return view('admin.order.edit', compact('order'));
     }
 
     /**
@@ -94,7 +95,27 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $order = Order::find($id);
+       
+        $order->product_name=$request->get('product_name');
+        
+
+
+        $order->customer_name=$request->get('customer_name');
+        $order->phone=$request->get('phone');
+       
+        $order->country=$request->get('country');
+        $order->address_line=$request->get('address_line');
+        $order->city=$request->get('city');
+        $order->zip_code=$request->get('zip_code');
+        $order->trx_id=$request->get('trx_id');
+        $order->payment_status=$request->get('payment_status');
+        
+
+      
+
+        $order->save();
+        return redirect('admin/order');
     }
 
     /**
@@ -105,6 +126,8 @@ class OrderController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $order = Order::find($id);
+        $order->delete();
+        return redirect('admin/order');
     }
 }

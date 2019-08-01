@@ -10,6 +10,9 @@
 </ul>
 <h1>Customer's Orders</h1>
 
+
+
+
 <div class="row-fluid sortable">	
 				<div class="box span12">
 					<div class="box-header">
@@ -39,6 +42,7 @@
 									  <th>Zip Code</th>
 									  <th>Address</th>							  
 									  <th>Payment Status</th>                                          
+									  <th colspan="2">Action</th>                                          
 								  </tr>
 							  </thead>   
 							  <tbody>
@@ -70,6 +74,23 @@
 										
 									@endif
  
+									</td>
+									<td colspan="2">
+										<form action="{{action('OrderController@destroy', $order['id'])}}" method="post">									
+									<a class="btn btn-info"  href="{{action('OrderController@edit', $order['id'])}}">
+										<i class="halflings-icon white edit"></i>  
+									</a>
+									
+										{{csrf_field()}}
+										<input type="hidden" name="_method" value="DELETE">
+
+										<button onclick="alert('Are You Sure to delete this ..!')" class="btn btn-danger" href="#">
+										<i class="halflings-icon white trash"></i> 
+										</button>
+
+									</form>
+										
+
 									</td>                                       
 								</tr>
 @endforeach
