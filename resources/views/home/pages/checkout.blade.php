@@ -113,7 +113,7 @@
                  
                 </div>
                 <div class="col-md-12 form-group p_star">
-                  <label for="">Bkash Transaction ID :</label>
+                  <label for=""><b>Bkash</b>  Transaction ID :</label>
                   <input type="text" class="form-control" id="trx" name="trx_id" required="required"
                     placeholder="Bkash Trx id (MXL434...M77...11V)"
                   />
@@ -187,10 +187,10 @@
                     <div class="check"></div>
                   </div>
                   <p>
-                   Bkash Wallet Number : <i style="font-weight: bold;">01753334444</i>  <br>
-                   Check your total Amount. <br>
-                   Confirm your payment. <br>
-                   Keep and Put your transaction ID Number. <br>
+                  <b> Bkash</b> Wallet Number : <i style="font-weight: bold;">01753334444</i>  <br>
+                   Check your <b>Total Amount</b> . <br>
+                   Confirm your <b>Payment</b> . <br>
+                   Keep and Put your <b>Transaction ID</b>  Number. <br>
 
                   </p>
                   
