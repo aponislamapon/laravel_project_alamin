@@ -90,13 +90,7 @@
                   </select>
                   </div>
                 </div>
-                <div class="col-md-12 form-group">
-                  <input type="text" class="form-control" id="add1" name="address_line"
-                    required="required"
-                    placeholder="Enter Address line"
-                  />
-                 
-                </div>
+               
                 
                 <div class="col-md-12 form-group">
                   <input type="text" class="form-control" id="city" name="city" required="required"
@@ -110,6 +104,13 @@
                     placeholder="Postcode/ZIP"
                     required="required"
                   />
+                </div>
+                 <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" id="add1" name="address_line"
+                    required="required"
+                    placeholder="Enter Address line"
+                  />
+                 
                 </div>
                 <div class="col-md-12 form-group p_star">
                   <label for="">Bkash Transaction ID :</label>
